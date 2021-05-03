@@ -1,0 +1,112 @@
+body {
+  background-color: black;
+  display: grid;
+  margin: 5% 15% 5% 15%;
+  grid-template-columns: 30% 20% 20% 30%;
+  grid-template-rows: 20% 40% 20%;
+}
+
+header {
+  grid-column: 1/4;
+  grid-row: 1;
+}
+h1 {
+  font-size: 50px;
+  color: greenyellow;
+}
+
+.tut {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: darkgreen;
+  grid-row: 1;
+  grid-column: 4;
+  font-size: 30px;
+}
+
+.Controls {
+  grid-row: 2;
+  grid-column: 2/4;
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 16.6% 16.6% 16.6% 16.6% 16.6% auto;
+}
+
+.Side2,
+.Side1 {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.Side1 {
+  grid-column: 1;
+}
+.Side2 {
+  grid-column: 2;
+}
+
+main {
+  grid-row: 3;
+  grid-column: 1/2;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 16.6% 16.6% 16.6% 16.6% 16.6% auto;
+  color: aliceblue;
+  font-size: 25px;
+}
+
+.Players {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.Name {
+  color: grey;
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px 15px;
+  background-color: inherit;
+  font-size: 25px;
+  border: none;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  grid-row: 4;
+  grid-column: 1/5;
+}
+
+.Start {
+  justify-self: space-around;
+  align-self: center;
+
+  font-size: 70px;
+
+  color: #fff;
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px 15px;
+  background-color: inherit;
+  border: none;
+}
+
+.Options {
+  display: flex;
+  padding: 10px 15px;
+
+  font-size: 18px;
+}
+
+.Name:hover {
+  background: #eee;
+}
+
+.Start:hover {
+  background: red;
+}
