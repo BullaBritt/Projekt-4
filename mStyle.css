@@ -1,28 +1,48 @@
+html {
+  animation: pulse 20s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    background-color: #f56a3f;
+  }
+  50% {
+    background-color: #9e42b0;
+  }
+}
+
 body {
-  background-color: black;
+  font-family: "Pangolin", cursive;
+
+  background-color: rgb(0, 27, 48);
   display: grid;
-  margin: 5% 15% 5% 15%;
+  margin: 5% 10% 5% 10%;
+  padding-left: 20px;
+  padding-right: 20px;
   grid-template-columns: 30% 20% 20% 30%;
   grid-template-rows: 20% 40% 20%;
 }
 
 header {
+  font-family: "Press Start 2P", cursive;
   grid-column: 1/4;
   grid-row: 1;
 }
 h1 {
-  font-size: 50px;
+  font-size: 40px;
   color: greenyellow;
 }
 
 .tut {
+  color: #eee;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  background-color: darkgreen;
   grid-row: 1;
   grid-column: 4;
-  font-size: 30px;
+  font-size: 20px;
+  font-weight: bolder;
 }
 
 .Controls {
@@ -36,9 +56,10 @@ h1 {
 
 .Side2,
 .Side1 {
+  font-family: "Teko", sans-serif;
   display: flex;
   justify-content: space-around;
-  font-size: 20px;
+  font-size: 26px;
   font-weight: bold;
   color: aliceblue;
 }
@@ -54,7 +75,7 @@ main {
   grid-row: 3;
   grid-column: 1/2;
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 5% 95%;
   grid-template-rows: 16.6% 16.6% 16.6% 16.6% 16.6% auto;
   color: aliceblue;
   font-size: 25px;
@@ -66,24 +87,54 @@ main {
 }
 
 .Name {
-  color: grey;
+  font-family: "Press Start 2P", cursive;
+  font-style: italic;
   display: inline-block;
   cursor: pointer;
   padding: 10px 15px;
   background-color: inherit;
-  font-size: 25px;
+  font-size: 22px;
   border: none;
+}
+
+.gif {
+  width: 100%;
+  grid-column: 4;
+  grid-row: 2/4;
+
+  justify-self: center;
+  align-self: center;
+}
+
+.button {
+  font-family: "Teko", sans-serif;
+  font-weight: bolder;
+  color: #ccc;
+  grid-column: 2/4;
+  grid-row: 3;
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+}
+
+.B1,
+.B2 {
+  justify-self: center;
+  align-self: center;
+  font-weight: 700;
 }
 
 footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   grid-row: 4;
   grid-column: 1/5;
 }
 
 .Start {
-  justify-self: space-around;
+  font-family: "Teko", sans-serif;
+
   align-self: center;
 
   font-size: 70px;
@@ -96,17 +147,17 @@ footer {
   border: none;
 }
 
-.Options {
+.Option {
   display: flex;
-  padding: 10px 15px;
-
-  font-size: 18px;
+  align-items: center;
+  color: #ccc;
 }
 
 .Name:hover {
   background: #eee;
+  padding: 10px;
 }
 
 .Start:hover {
-  background: red;
+  color: greenyellow;
 }
