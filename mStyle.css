@@ -123,6 +123,8 @@ main {
   justify-self: center;
   align-self: center;
   font-weight: 700;
+
+  font-size: larger;
 }
 
 footer {
